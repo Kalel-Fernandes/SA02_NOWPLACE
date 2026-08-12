@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NowPlace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>NOWPLACE</h1>
+    <button id="fabBtn">📸 Criar Now</button>
+
+    <div id="cameraOverlay" class="hidden">
+        <h2 id="cameraStepText">1/2 · AMBIENTE</h2>
+        <video id="cameraVideo" autoplay playsinline></video>
+        <p id="cameraHint">Mostre onde você está</p>
+        <button id="shutterBtn">+</button>
+        <button id="cameraCancelBtn">Cancelar</button>
+    </div>
+
+    <canvas id="captureCanvas"></canvas>
+    <div id="content"></div>
+    <script src="script.js"></script>
+</body>
+</html>

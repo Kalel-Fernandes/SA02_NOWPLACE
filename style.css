@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #0e1113;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: #00ff9d;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#fabBtn {
+    background: #00ff9d;
+    color: black;
+}
+
+#cameraOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    z-index: 10;
+}
+
+#cameraVideo {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+#cameraStepText {
+    color: #00ff9d;
+}
+
+#cameraHint {
+    color: #ccc;
+}
+
+#shutterBtn {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    border-radius: 50%;
+    background: white;
+    font-size: 25px;
+}
+
+#cameraCancelBtn {
+    background: #333;
+    color: white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#captureCanvas {
+    display: none;
+}
+
+.now-card {
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 15px;
+    background: #1a1f22;
+    border-radius: 15px;
+}
+
+.fotos {
+    position: relative;
+    height: 350px;
+}
+
+.foto-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.foto-secundaria {
+    position: absolute;
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    right: 10px;
+    bottom: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: grab;
+}
+
+.polaroid {
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 15px;
+    padding-bottom: 20px;
+    background: white;
+    color: #222;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #0008;
+}
+
+.foto-polaroid {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.foto-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.foto-secundaria {
+    position: absolute;
+    width: 110px;
+    height: 140px;
+    right: 10px;
+    bottom: 10px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 3px;
+    cursor: grab;
+    box-shadow: 0 3px 10px #0008;
+}
+
+.polaroid-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.polaroid-info small {
+    color: #666;
+}
+
+.bloqueado {
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+    background: #1a1f22;
+    border-radius: 15px;
+}
