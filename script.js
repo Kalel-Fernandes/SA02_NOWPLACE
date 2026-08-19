@@ -266,10 +266,4 @@ function configurarDrag(card, post) {
         }
     );
 }
-
-
-// ================================
-// INICIAR
-// ================================
-
 mostrarNows();
